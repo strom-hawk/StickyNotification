@@ -3,10 +3,8 @@ package io.demoapps.stickynotification
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.work.WorkManager
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var workManagerInstance: WorkManager
     private lateinit var fireNotificationButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +15,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initVariables() {
-        workManagerInstance = WorkManager.getInstance(applicationContext)
         fireNotificationButton = findViewById(R.id.fireNotificationButton)
     }
 
