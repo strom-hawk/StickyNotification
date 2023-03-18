@@ -27,9 +27,11 @@ class MainActivity : AppCompatActivity() {
         fireNotificationButton.setOnClickListener {
 
             val data = Data.Builder()
+            data.putString("packageName", packageName)
 
             val notificationWork = OneTimeWorkRequest
                 .Builder(StickyNotificationWorkManager::class.java )
+                .setInputData(data.build())
                 //.setInitialDelay(5, TimeUnit.SECONDS)
                 .build()
             workManagerInstance.enqueue(notificationWork)
