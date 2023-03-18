@@ -1,17 +1,61 @@
-*.iml
+#Build application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+#Files for the ART/ Dalvik VM
+*.dex
+
+#Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+
+#Gradle files
 .gradle
-/local.properties
+.gradle/
+build/
+
+#Local configuration
+local.properties
+proguard/
+*.log
+
+#Android studio navigation
+
+.navigation/
+captures/
+
+*.iml
+
+#IntelliJ
+.idea/workspace.xml
+.idea/task.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/jarRepositories.xml
+.idea/caches
+.idea/modules.xml
+.idea/navEditor.xml
+.idea/.name
+.idea/codeStyles.xml
+.idea/misc.xml
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
+
+/local.properties
 .DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
-local.properties
-.idea
-/.idea/*
